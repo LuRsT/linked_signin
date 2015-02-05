@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            div {
+                width: 60%;
+                margin: auto;
+            }
+            .right-side {
+                display: block;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img class="right-side" src="{{ profile_info.pictureUrl }}" />
+
+            <h1>{{ profile_info.firstName }} {{ profile_info.lastName }}</h1>
+
+            <h3>{{ profile_info.headline }}</h3>
+
+            <p>Industry: {{ profile_info.industry }}</p>
+            <p>E-mail address: {{ profile_info.emailAddress }}</p>
+            <p>Location: {{ profile_info.location.name }}</p>
+
+            <h3>Positions</h3>
+            {% for position in profile_info['positions']['values'] %}
+            <ul>
+                <li>
+                    {{ position.startDate.year }} / {{ position.startDate.month }}
+                </li>
+                <li>{{ position.summary }}</li>
+                <li>Current? {{ position.isCurrent }}</li>
+            </ul>
+            {% endfor %}
+        </div>
+    </body>
+</html>
