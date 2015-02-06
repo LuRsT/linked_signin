@@ -5,7 +5,7 @@ from flask import request
 from flask import url_for
 
 from linkedin_auth import get_access_token
-from linkedin_auth import get_authentication_url
+from linkedin_auth import get_authorization_url
 from linkedin_get_profile import get_profile_info_from_linkedin
 
 
@@ -14,7 +14,7 @@ APP = Flask(__name__)
 
 @APP.route("/")
 def index():
-    return "<a href='{}'>Linkedin Login</a>".format(get_authentication_url())
+    return "<a href='{}'>Linkedin Login</a>".format(get_authorization_url())
 
 
 @APP.route("/login")

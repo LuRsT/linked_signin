@@ -19,7 +19,7 @@ def _get_authentication():
     return authentication
 
 
-def get_authentication_url():
+def get_authorization_url():
     authentication = _get_authentication()
     return authentication.authorization_url
 
@@ -31,7 +31,7 @@ def get_access_token(code):
 
 
 if __name__ == "__main__":
-    authorization_url = get_authentication_url()
+    authorization_url = get_authorization_url()
     print 'Opening {} in your browser...'.format(authorization_url)
     browser_open(authorization_url, new=0, autoraise=True)
 

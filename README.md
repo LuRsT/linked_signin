@@ -1,6 +1,6 @@
 # Linkedin Sign-in Playground
 
-This is a simple flask app that shows how linkedin authorization and
+This is a simple flask app that shows how linkedin authentication and
 `get_profile` endpoint works.
 
 This was made for educational purpuses, DO NOT use this in production,
