@@ -6,7 +6,7 @@ argparse==1.4.0
 httplib2==0.10.3
 itsdangerous==0.24
 oauth2==1.9.0.post1
-oauthlib==0.7.2
+oauthlib==2.0.6
 python-linkedin==4.1
 requests==2.5.1
 requests-oauthlib==0.4.2
