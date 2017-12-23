@@ -8,7 +8,7 @@ itsdangerous==0.24
 oauth2==1.9.0.post1
 oauthlib==2.0.6
 python-linkedin==4.1
-requests==2.5.1
+requests==2.18.4
 requests-oauthlib==0.4.2
 simplejson==3.6.5
 wsgiref==0.1.2
