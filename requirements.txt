@@ -1,7 +1,7 @@
 Flask==0.12.2
 Jinja2==2.10
 MarkupSafe==1.0
-Werkzeug==0.10.1
+Werkzeug==0.13
 argparse==1.2.1
 httplib2==0.9
 itsdangerous==0.24
